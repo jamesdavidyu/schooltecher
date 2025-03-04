@@ -1,6 +1,5 @@
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
-import { Login } from "../model/authentication.type";
 import { Observable } from "rxjs";
 
 @Injectable({
@@ -11,6 +10,6 @@ export class AuthenticationService {
 
   login(data: any): Observable<any> {
     const url = "http://localhost:8080/api/v1/login";
-    return this.http.post(url, data, {});
+    return this.http.post(url, data);
   }
 }

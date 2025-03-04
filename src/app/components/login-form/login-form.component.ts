@@ -12,6 +12,7 @@ import { AuthenticationService } from "../../services/authentication.service";
 import { HlmInputDirective } from "@spartan-ng/ui-input-helm";
 import { HlmFormFieldModule } from "@spartan-ng/ui-formfield-helm";
 import { FormBuilder, ReactiveFormsModule, Validators } from "@angular/forms";
+import { CookieService } from "ngx-cookie-service";
 
 @Component({
   selector: "app-login-form",
@@ -35,6 +36,7 @@ import { FormBuilder, ReactiveFormsModule, Validators } from "@angular/forms";
 export class LoginFormComponent {
   private _formBuilder = inject(FormBuilder);
   private authenticationService = inject(AuthenticationService);
+  private cookieService = inject(CookieService);
 
   form = this._formBuilder.group({
     username: ["", [Validators.email, Validators.required]],
@@ -44,7 +46,7 @@ export class LoginFormComponent {
   onSubmit() {
     if (this.form.valid) {
       this.authenticationService.login(this.form.value).subscribe({
-        next: (response) => console.log("Success: ", response),
+        next: (response) => this.cookieService.set("authToken", response.token),
         error: (error) => console.error("Error: ", error),
       });
     }
