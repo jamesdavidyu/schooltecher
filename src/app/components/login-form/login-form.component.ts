@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, inject } from "@angular/core";
 import {
   HlmCardContentDirective,
   HlmCardDescriptionDirective,
@@ -11,13 +11,7 @@ import { HlmButtonDirective } from "@spartan-ng/ui-button-helm";
 import { AuthenticationService } from "../../services/authentication.service";
 import { HlmInputDirective } from "@spartan-ng/ui-input-helm";
 import { HlmFormFieldModule } from "@spartan-ng/ui-formfield-helm";
-import {
-  Form,
-  FormBuilder,
-  FormGroup,
-  ReactiveFormsModule,
-  Validators,
-} from "@angular/forms";
+import { FormBuilder, ReactiveFormsModule, Validators } from "@angular/forms";
 
 @Component({
   selector: "app-login-form",
@@ -39,17 +33,13 @@ import {
   providers: [AuthenticationService],
 })
 export class LoginFormComponent {
-  form: FormGroup;
+  private _formBuilder = inject(FormBuilder);
+  private authenticationService = inject(AuthenticationService);
 
-  constructor(
-    private fb: FormBuilder,
-    private authenticationService: AuthenticationService
-  ) {
-    this.form = this.fb.group({
-      username: ["", [Validators.email, Validators.required]],
-      password: ["", Validators.required],
-    });
-  }
+  form = this._formBuilder.group({
+    username: ["", [Validators.email, Validators.required]],
+    password: ["", Validators.required],
+  });
 
   onSubmit() {
     if (this.form.valid) {

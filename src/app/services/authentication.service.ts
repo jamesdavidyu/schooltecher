@@ -9,8 +9,8 @@ import { Observable } from "rxjs";
 export class AuthenticationService {
   constructor(private http: HttpClient) {}
 
-  login(data: Login): Observable<any> {
-    const url = "https://ed-api.koyeb.app/login";
-    return this.http.post(url, data);
+  login(data: any): Observable<any> {
+    const url = "http://localhost:8080/api/v1/login";
+    return this.http.post(url, data, {});
   }
 }
