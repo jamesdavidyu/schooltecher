@@ -1,0 +1,276 @@
+{
+  "version": "6.0",
+  "nxVersion": "20.4.6",
+  "pathMappings": {
+    "@spartan-ng/ui-card-helm": [
+      "./src/libs/ui/ui-card-helm/src/index.ts"
+    ],
+    "@spartan-ng/ui-input-helm": [
+      "./src/libs/ui/ui-input-helm/src/index.ts"
+    ],
+    "@spartan-ng/ui-formfield-helm": [
+      "./src/libs/ui/ui-formfield-helm/src/index.ts"
+    ],
+    "@spartan-ng/ui-button-helm": [
+      "./src/libs/ui/ui-button-helm/src/index.ts"
+    ]
+  },
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {
+      "schooltecher": [
+        {
+          "file": ".editorconfig",
+          "hash": "4165385352547808172"
+        },
+        {
+          "file": ".gitignore",
+          "hash": "18168400278403753650"
+        },
+        {
+          "file": ".postcssrc.json",
+          "hash": "16699958190053211386"
+        },
+        {
+          "file": ".vscode/extensions.json",
+          "hash": "5331566439708925252"
+        },
+        {
+          "file": ".vscode/launch.json",
+          "hash": "17038929134016848735"
+        },
+        {
+          "file": ".vscode/tasks.json",
+          "hash": "5336636969995539451"
+        },
+        {
+          "file": "README.md",
+          "hash": "7921326162356323036"
+        },
+        {
+          "file": "angular.json",
+          "hash": "8050968183239099121"
+        },
+        {
+          "file": "components.json",
+          "hash": "11872125944378529261"
+        },
+        {
+          "file": "package-lock.json",
+          "hash": "10901102073485731029"
+        },
+        {
+          "file": "package.json",
+          "hash": "16246316699643087750",
+          "deps": [
+            "npm:@angular-devkit/build-angular",
+            "npm:@angular/cli",
+            "npm:@angular/compiler-cli",
+            "npm:@spartan-ng/cli",
+            "npm:@types/express",
+            "npm:@types/jasmine",
+            "npm:@types/node",
+            "npm:jasmine-core",
+            "npm:karma",
+            "npm:karma-chrome-launcher",
+            "npm:karma-coverage",
+            "npm:karma-jasmine",
+            "npm:karma-jasmine-html-reporter",
+            "npm:tailwind-merge",
+            "npm:tailwindcss-animate",
+            "npm:typescript",
+            "npm:@angular/cdk",
+            "npm:@angular/common",
+            "npm:@angular/compiler",
+            "npm:@angular/core",
+            "npm:@angular/forms",
+            "npm:@angular/platform-browser",
+            "npm:@angular/platform-browser-dynamic",
+            "npm:@angular/platform-server",
+            "npm:@angular/router",
+            "npm:@angular/ssr",
+            "npm:@spartan-ng/brain",
+            "npm:@tailwindcss/postcss",
+            "npm:class-variance-authority",
+            "npm:clsx",
+            "npm:express",
+            "npm:postcss",
+            "npm:rxjs",
+            "npm:tailwindcss",
+            "npm:tslib",
+            "npm:zone.js"
+          ]
+        },
+        {
+          "file": "public/favicon.ico",
+          "hash": "3988961587069885523"
+        },
+        {
+          "file": "src/app/app.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/app.component.html",
+          "hash": "13533530353626774119"
+        },
+        {
+          "file": "src/app/app.component.spec.ts",
+          "hash": "6807778777939329166"
+        },
+        {
+          "file": "src/app/app.component.ts",
+          "hash": "5735152529416164153"
+        },
+        {
+          "file": "src/app/app.config.server.ts",
+          "hash": "5182732867510691247"
+        },
+        {
+          "file": "src/app/app.config.ts",
+          "hash": "7010437369200889524"
+        },
+        {
+          "file": "src/app/app.routes.server.ts",
+          "hash": "4507635750745431950"
+        },
+        {
+          "file": "src/app/app.routes.ts",
+          "hash": "12397496131277534773"
+        },
+        {
+          "file": "src/app/components/login-form/login-form.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/components/login-form/login-form.component.html",
+          "hash": "1414469426589042562"
+        },
+        {
+          "file": "src/app/components/login-form/login-form.component.spec.ts",
+          "hash": "6775653742369207413"
+        },
+        {
+          "file": "src/app/components/login-form/login-form.component.ts",
+          "hash": "15704256081288575506"
+        },
+        {
+          "file": "src/app/services/authentication.service.spec.ts",
+          "hash": "9336182511222613820"
+        },
+        {
+          "file": "src/app/services/authentication.service.ts",
+          "hash": "5278294689978665120"
+        },
+        {
+          "file": "src/index.html",
+          "hash": "18121410520456405833"
+        },
+        {
+          "file": "src/libs/ui/ui-button-helm/src/index.ts",
+          "hash": "17251273102492170138"
+        },
+        {
+          "file": "src/libs/ui/ui-button-helm/src/lib/hlm-button.directive.ts",
+          "hash": "11068329498313394712"
+        },
+        {
+          "file": "src/libs/ui/ui-button-helm/src/lib/hlm-button.token.ts",
+          "hash": "7896754714560199098"
+        },
+        {
+          "file": "src/libs/ui/ui-card-helm/src/index.ts",
+          "hash": "16562238750490677596"
+        },
+        {
+          "file": "src/libs/ui/ui-card-helm/src/lib/hlm-card-content.directive.ts",
+          "hash": "14120040773416496629"
+        },
+        {
+          "file": "src/libs/ui/ui-card-helm/src/lib/hlm-card-description.directive.ts",
+          "hash": "11379924620899130749"
+        },
+        {
+          "file": "src/libs/ui/ui-card-helm/src/lib/hlm-card-footer.directive.ts",
+          "hash": "10967238700823552868"
+        },
+        {
+          "file": "src/libs/ui/ui-card-helm/src/lib/hlm-card-header.directive.ts",
+          "hash": "1015807727704180195"
+        },
+        {
+          "file": "src/libs/ui/ui-card-helm/src/lib/hlm-card-title.directive.ts",
+          "hash": "12874525138222134681"
+        },
+        {
+          "file": "src/libs/ui/ui-card-helm/src/lib/hlm-card.directive.ts",
+          "hash": "17507123041101396637"
+        },
+        {
+          "file": "src/libs/ui/ui-formfield-helm/src/index.ts",
+          "hash": "1379682831294187538"
+        },
+        {
+          "file": "src/libs/ui/ui-formfield-helm/src/lib/form-field.spec.ts",
+          "hash": "10503076414885840074"
+        },
+        {
+          "file": "src/libs/ui/ui-formfield-helm/src/lib/hlm-error.directive.ts",
+          "hash": "8559813530759281347"
+        },
+        {
+          "file": "src/libs/ui/ui-formfield-helm/src/lib/hlm-form-field.component.ts",
+          "hash": "10263304905217156553"
+        },
+        {
+          "file": "src/libs/ui/ui-formfield-helm/src/lib/hlm-hint.directive.ts",
+          "hash": "6215421755390582281"
+        },
+        {
+          "file": "src/libs/ui/ui-input-helm/src/index.ts",
+          "hash": "487913567356772959"
+        },
+        {
+          "file": "src/libs/ui/ui-input-helm/src/lib/hlm-input-error.directive.ts",
+          "hash": "13040471592513364896"
+        },
+        {
+          "file": "src/libs/ui/ui-input-helm/src/lib/hlm-input.directive.ts",
+          "hash": "1809643114653750158"
+        },
+        {
+          "file": "src/main.server.ts",
+          "hash": "11653607448136507287"
+        },
+        {
+          "file": "src/main.ts",
+          "hash": "4927504514031276065"
+        },
+        {
+          "file": "src/server.ts",
+          "hash": "16156237346693200359"
+        },
+        {
+          "file": "src/styles.css",
+          "hash": "7082144436027048345"
+        },
+        {
+          "file": "tailwind.config.js",
+          "hash": "13845170938746280069"
+        },
+        {
+          "file": "tsconfig.app.json",
+          "hash": "276732825940243503"
+        },
+        {
+          "file": "tsconfig.json",
+          "hash": "9376836903427204358"
+        },
+        {
+          "file": "tsconfig.spec.json",
+          "hash": "8918301549046766373"
+        }
+      ]
+    },
+    "nonProjectFiles": []
+  }
+}

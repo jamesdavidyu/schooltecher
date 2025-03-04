@@ -1,0 +1,35 @@
+<section hlmCard class="w-fit">
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div hlmCardHeader>
+      <h3 hlmCardTitle>Welcome!</h3>
+      <p hlmCardDescription>Log in below.</p>
+    </div>
+    <div hlmCardContent class="flex flex-col space-y-2">
+      <hlm-form-field>
+        <input
+          aria-label="Email"
+          formControlName="username"
+          hlmInput
+          type="text"
+          placeholder="Email"
+        />
+      </hlm-form-field>
+      <hlm-form-field>
+        <input
+          aria-label="Password"
+          formControlName="password"
+          hlmInput
+          type="password"
+          placeholder="Password"
+        />
+      </hlm-form-field>
+      <button hlmBtn type="submit" variant="default" [disabled]="form.invalid">
+        Log In
+      </button>
+      <button hlmBtn type="button" variant="secondary">Sign Up</button>
+    </div>
+    <p hlmCardFooter class="text-red-500 hover:underline hover:cursor-pointer">
+      Forgot your password?
+    </p>
+  </form>
+</section>
